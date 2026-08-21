@@ -1,141 +1,212 @@
-<<<<<<< HEAD
-# CivicAI
-AI Powered Career Analytics and Recruiter Hub
-=======
-# CivicAI – AI-Powered Workforce Intelligence & Recruiter Hub
-**Summer Training 2026 Project Submission**  
-*An Advanced Full-Stack AI/ML Platform built with Vanilla TypeScript, Tailwind CSS, Express, Python, SQLite, and Gemini LLM integration.*
+# CivicAI – AI-Powered Workforce Intelligence & Recruiter Platform
+
+An advanced, full-stack Workforce Intelligence platform combining **Classical Machine Learning (Multiple Linear Regression, Logistic Regression, Random Forest, K-Means)**, **Generative AI (Gemini 2.5/Flash)**, and a **Recruiter Management System** built with **Vanilla TypeScript**, **Tailwind CSS**, **Node.js/Express**, and **Python + SQLite**.
 
 ---
 
-## 🚀 Project Overview
+## 🌟 Key Features
 
-**CivicAI** is an advanced career intelligence census and recruiter workspace designed to solve matching, capability mapping, and upskilling roadmap planning for the modern workforce. 
+### 1. 👥 Multi-Role Authentication & User Workspace
+- **Role-Based Access Control (RBAC)**: Support for **Candidate** and **Recruiter** accounts.
+- **Candidate Hub**:
+  - Profile management, resume upload, live career readiness score, and skill gaps radar.
+  - Interactive multi-step workforce census.
+  - Real-time notification center tracking profile activations and recruiter actions.
+  - Timestamp recording in **Indian Standard Time (IST)** (`YYYY-MM-DD HH:MM:SS`).
+- **Recruiter Hub**:
+  - Searchable and filterable candidate talent pool with multi-criteria filtering (role, minimum experience, education, minimum career score, cluster segment, relocation, etc.).
+  - Candidate deep-dive modal featuring skill radar distributions, career history, and compensation predictions.
+  - Interactive candidate management (status tagging, candidate deletion, shortlisted talent view).
 
-Instead of showing workforce statistics publicly, the platform centers around a secure **Recruiter's Hub** where human resource teams can filter and search talent, coupled with an interactive **Workforce Census** that candidates can join to receive immediate deep learning capacity scoring.
+### 2. 🧠 Unified Machine Learning Pipeline (`ml_db.py`)
+All machine learning model training, dataset generation, inference, and persistence are consolidated into a **single, unified server-side Python module (`ml_db.py`)**:
 
-### Key Objectives
-1. **Gather High-Dimensional Data**: Implement a 20-question multi-step census tracking personal, educational, technical (Python, Java, SQL, Web, ML), and soft skills (Communication, Leadership, Problem Solving).
-2. **Execute Multi-Model ML Pipeline**: Deploy classical and deep learning models to predict expected compensation (Linear Regression), job-readiness (Logistic Regression), talent grouping (Unsupervised K-Means), and overall capacity scoring (Random Forest vs. Deep Learning Multi-Layer Perceptron).
-3. **Parse Goal Statements with NLP**: Analyze free-text aspirations to compute sentiment tone and extract core keywords.
-4. **Interactive Gemini Suitability Analysis**: Empower recruiters to select standard roles or input custom target job descriptions, triggering real-time, server-side Gemini-3.5-Flash analysis for percentage suitability, gaps breakdown, and an upskilling roadmap.
+- **Dataset Synthesizer**: Generates and manages realistic demographic workforce data (850+ records) based on Indian tech industry salary bands (INR), experience curves, and skill matrices across major tech hubs (Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR, etc.).
+- **Multiple Linear Regression (Expected Salary in INR LPA)**:
+  - Solves the closed-form **Normal Equation** with Ridge $L_2$ regularization: $\mathbf{w} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}$.
+  - Features: Experience, education tier, Python, Java, SQL, Web Dev, ML, Problem Solving, Communication.
+  - Metrics: $R^2 \approx 0.988$, $\text{RMSE} \approx ₹45,745$, $\text{MAE} \approx ₹35,997$.
+- **Binary Logistic Regression (Employability Classifier)**:
+  - Sigmoid cross-entropy gradient descent over 280 epochs predicting binary job readiness ($p \ge 0.5 \implies \text{Employable}$).
+  - Live Out-of-Sample Confusion Matrix ($TP, FP, TN, FN$), Accuracy ($\approx 95.9\%$), Precision ($\approx 97.1\%$), Recall ($\approx 97.8\%$), $F_1$-Score ($\approx 97.4\%$).
+- **Random Forest Ensemble (Career Readiness Score)**:
+  - 12-tree bagging ensemble with randomized feature sub-sampling ($m = 5$) and variance reduction splits.
+  - Computes global Gini feature importance rankings (Experience $\approx 30.0\%$, Tech Skills $\approx 28.8\%$, Soft Skills $\approx 13.5\%$, Problem Solving $\approx 5.9\%$).
+- **Unsupervised K-Means Clustering (Workforce Demographics)**:
+  - Lloyd's spatial convergence algorithm ($k=3$) grouping candidates into **Freshers**, **Skilled Professionals**, and **Career Changers**.
+  - Evaluates spatial cluster cohesion using **Silhouette Score** ($\approx 0.60$–$0.82$).
 
----
+### 3. 📊 Interactive Talent Analytics Dashboard
+- **Salary Projections vs. Experience**: Interactive Plotly scatter plot with linear regression trendlines.
+- **Cluster Distributions**: Demographic bar charts and talent segment breakdowns.
+- **Skills Competency Heatmap**: Visual matrix comparing candidate technical vs. soft skill proficiencies.
+- **Dynamic Model Benchmarks**: Live comparison matrix displaying Accuracy, Precision, Recall, $F_1$-Score, and algorithmic trade-offs for all 4 ML models.
 
-## 🛠️ Technology Stack
-
-### Frontend
-- **Vanilla TypeScript (SPA)**: For building a highly modular, lightning-fast, and secure client-side interface without virtual DOM overhead.
-- **Tailwind CSS v4**: High-contrast typography pairings (Inter, JetBrains Mono) with modern, utility-first layout architectures.
-- **Plotly.js (via CDN)**: Interactive multi-colored scatter plots, clustering projections, and demographic analysis.
-
-### Backend & Database
-- **Express.js Server (Node.js)**: Custom REST services bound to port 3000, proxies requests to Gemini and coordinates with Python database CLI tools.
-- **SQLite Database (`candidates.db`)**: Persistent database containing recruiter users, candidate profiles, suitability history, notifications, resumes, upskilling roadmaps, and recommendation logs.
-- **Python CLI Database Bridge (`ml_db.py`)**: Handles ML model pipelines, SQLite database management, and authentication state verification.
-
-### AI & Machine Learning Suite
-- **Linear Regression**: Salary prediction modeled on experience, education, and specific tech scores.
-- **Logistic Regression**: Employability status binary classifier using Sigmoid activation.
-- **K-Means Clustering**: Euclidean distance calculation grouping candidates into 3 segment centroids:
-  - *Fresher (Emerging Talent)*
-  - *Skilled Professional*
-  - *Career Changer*
-- **Deep Learning MLP**: 3-layer backpropagation Neural Network using ReLU activations, mimicking forward-feed calculations to predict ultimate Career Scores.
-- **NLP Text Parser**: Tokenizer filtering English stopwords, scoring sentiment tone, and building tag cloud frequencies.
-- **Gemini-3.5-Flash Integration**: Server-side client utilizing the official `@google/genai` client, using structured response schema for secure candidate evaluation.
-
----
-
-## 🗄️ Database Schema & File Structure
-
-Our database tracks the following schema inside `/candidates.db`:
-
-### `candidates` Table
-- **id**: Primary Key (`TEXT`)
-- **name**: Candidate Name (`TEXT`)
-- **email**: Candidate Email (`TEXT`, Unique)
-- **age**: Candidate Age (`INTEGER`)
-- **gender**: Candidate Gender (`TEXT`)
-- **city**: Candidate City (`TEXT`)
-- **state**: Candidate State (`TEXT`)
-- **education**: Qualification (`TEXT`)
-- **employment_status**: Employment Status (`TEXT`)
-- **experience**: Years of Experience (`INTEGER`)
-- **current_role**: Current Role/Domain (`TEXT`)
-- **preferred_role**: Preferred Role (`TEXT`)
-- **expected_salary**: Expected Salary (`INTEGER`)
-- **preferred_work_mode**: Remote / Hybrid / On-Site (`TEXT`)
-- **skills**: Technical Skill Metrics (`TEXT` - JSON format)
-- **soft_skills**: Soft Skill Metrics (`TEXT` - JSON format)
-- **career_goals**: Text description of goals (`TEXT`)
-- **career_score**: Random Forest / Analytical Capacity Score (`INTEGER`)
-- **employability_status**: Employability category (`TEXT`)
-- **predicted_salary**: Predicted compensation (`INTEGER`)
-- **cluster**: Segment group (`TEXT`)
-- **nlp_sentiment**: Goal statement sentiment (`TEXT`)
-- **nlp_keywords**: Goal statement keywords (`TEXT` - JSON format)
-- **user_id**: Owner user ID (`TEXT`)
-
-### `users` Table
-- **id**: Primary Key (`TEXT`)
-- **email**: User Email (`TEXT`, Unique)
-- **password_hash**: Hashed Password (`TEXT`)
-- **role**: User Role (`TEXT` - recruiter / candidate)
-- **company_name**: Company Name (`TEXT`, for recruiters)
-- **designation**: Job Designation (`TEXT`, for recruiters)
-- **created_at**: Account creation timestamp (`TEXT`)
-
-### `notifications` Table
-- **id**: Primary Key (`TEXT`)
-- **user_id**: Receiver User ID (`TEXT`)
-- **title**: Notification Header (`TEXT`)
-- **message**: Notification Details (`TEXT`)
-- **type**: Info / Success / Warning (`TEXT`)
-- **is_read**: Unread/Read Flag (`INTEGER`)
-- **created_at**: Timestamp (`TEXT`)
+### 4. 🤖 AI-Powered Recruiter Suitability Analysis (Gemini Integration)
+- Evaluates candidate fit against custom target job descriptions or preset industry roles.
+- Generates a structured breakdown with **Percentage Match Score**, **Strengths**, **Critical Skill Gaps**, and an **Actionable Upskilling Roadmap**.
 
 ---
 
-## 📝 Theoretical Model Definitions (Viva-Ready)
+## 🏗️ System Architecture
 
-Keep these simple explanations in mind for your academic defense:
-
-1. **Linear Regression (Expected Salary)**:
-   - *Why*: Projects numeric output (salary).
-   - *How*: Calculates weighted values for years of experience and skill scores plus fixed bonuses for degrees (e.g., $M.S. = +12k$, $PhD = +26k$).
-2. **Logistic Regression (Employability)**:
-   - *Why*: Binary classification (Employable vs. Needs Upskilling).
-   - *How*: Normalizes technical and soft skill averages against experience, calculates a linear sum ($z$), and applies the Sigmoid function $1 / (1 + e^{-z})$. If the result is $\ge 0.5$, candidate is declared job-ready.
-3. **K-Means Clustering (Workforce Segmentation)**:
-   - *Why*: Groups unlabeled candidates into clusters (Emerging, Skilled, Career Changers).
-   - *How*: Uses 3 predetermined multi-dimensional centroids (Experience, Tech Skills, Soft Skills). Calculates the Euclidean distance from the candidate to each centroid and assigns them to the closest one.
-4. **Deep Learning Multi-Layer Perceptron (MLP)**:
-   - *Why*: Captures complex, non-linear capability mappings.
-   - *How*: Takes a 10-feature normalized vector. Passes through a 6-node Hidden Layer 1 (ReLU), then a 4-node Hidden Layer 2 (ReLU), and finally maps to a Sigmoid output representing the final 40-100 Career Score.
+```
+┌──────────────────────────────────────────────────────────┐
+│                    Frontend (SPA)                        │
+│   Vanilla TypeScript + Tailwind CSS + Plotly.js Charts   │
+│   (Home, Census Form, Recruiter Hub, Talent Analytics)   │
+└────────────────────────────┬─────────────────────────────┘
+                             │ REST API (JSON)
+┌────────────────────────────▼─────────────────────────────┐
+│                 Node.js / Express Server                 │
+│                      (server.ts)                         │
+│  - Serves static SPA bundle                              │
+│  - Routes: /api/candidates, /api/auth, /api/ml/metrics   │
+│  - Proxies Gemini LLM requests via @google/genai         │
+│  - Bridges Python CLI actions (JSON stdio)               │
+└──────────────┬─────────────────────────────┬─────────────┘
+               │ Python CLI                  │ Gemini SDK
+┌──────────────▼─────────────┐ ┌─────────────▼─────────────┐
+│   ML & Database Engine     │ │   Google Gemini 2.5 API   │
+│        (ml_db.py)          │ │ (Role Suitability Analysis│
+│  - SQLite3 (candidates.db) │ │  & Upskilling Roadmaps)   │
+│  - Classical ML Models     │ └───────────────────────────┘
+│  - IST Timestamp Handler   │
+└────────────────────────────┘
+```
 
 ---
 
-## 🏃 Setup & Local Execution
+## 🗄️ Database Architecture (`candidates.db`)
+
+The SQLite database (`candidates.db`) is managed via `ml_db.py` with the following key tables:
+
+### 1. `users` Table
+| Column | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `TEXT PRIMARY KEY` | Unique user ID (`user-xxxxxx`) |
+| `email` | `TEXT UNIQUE` | User login email |
+| `password` | `TEXT` | Plain/hashed credentials |
+| `role` | `TEXT` | Account role (`candidate` or `recruiter`) |
+| `created_at` | `TEXT` | **IST Timestamp** (`YYYY-MM-DD HH:MM:SS`) |
+
+### 2. `candidates` Table
+| Column | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `TEXT PRIMARY KEY` | Candidate ID (`cand-xxx`) |
+| `user_id` | `TEXT` | Foreign key referencing `users.id` |
+| `name`, `email`, `age`, `gender` | `TEXT / INT` | Personal demographic information |
+| `city`, `state` | `TEXT` | Geographic location in India |
+| `education`, `experience` | `TEXT / REAL` | Academic degree & years of experience |
+| `current_role`, `preferred_role` | `TEXT` | Career designation & target role |
+| `expected_salary` | `INTEGER` | Expected compensation in INR |
+| `preferred_work_mode` | `TEXT` | Remote, Hybrid, or On-Site |
+| `skills_json` | `TEXT` | 10 technical & soft skill ratings (1 to 5) |
+| `career_score` | `INTEGER` | ML-predicted Career Score (30–100) |
+| `employability_status` | `TEXT` | `Employable` or `Needs Upskilling` |
+| `predicted_salary` | `INTEGER` | Linear Regression predicted salary (INR) |
+| `cluster` | `TEXT` | K-Means cluster assignment |
+| `suitabilityHistory_json` | `TEXT` | Stored Gemini role suitability evaluations |
+
+### 3. `recruiters` Table
+| Column | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `TEXT PRIMARY KEY` | Recruiter profile ID (`rec-xxx`) |
+| `user_id` | `TEXT` | Foreign key referencing `users.id` |
+| `company_name` | `TEXT` | Employer / organization name |
+| `designation` | `TEXT` | Job title (e.g., Talent Lead, HR Manager) |
+
+### 4. `notifications` Table
+| Column | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `TEXT PRIMARY KEY` | Notification ID (`ntf-xxxxxx`) |
+| `user_id` | `TEXT` | Recipient user ID |
+| `title`, `message`, `type` | `TEXT` | Notification header, body, and category |
+| `is_read` | `INTEGER` | Read flag (0 = unread, 1 = read) |
+| `created_at` | `TEXT` | **IST Timestamp** (`YYYY-MM-DD HH:MM:SS`) |
+
+---
+
+## 🔬 Mathematical ML Models Summary
+
+| Algorithm | Type | Target Output | Key Equations / Techniques | Performance |
+| :--- | :--- | :--- | :--- | :--- |
+| **Multiple Linear Regression** | Supervised Regression | Expected Salary (INR) | Normal Equation: $\mathbf{w} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}$ | $R^2 = 0.988$<br>$\text{Accuracy} = 97.1\%$ |
+| **Binary Logistic Regression** | Supervised Classification | Employability (`Employable` / `Needs Upskilling`) | Sigmoid: $\sigma(z) = \frac{1}{1 + e^{-z}}$<br>Loss: Binary Cross-Entropy | $\text{Accuracy} = 95.9\%$<br>$F_1\text{-Score} = 97.4\%$ |
+| **Random Forest** | Supervised Ensemble | Career Readiness Score (30–100) | 12 Decision Trees with Bagging & feature sub-sampling | $\text{Accuracy} = 97.1\%$<br>$F_1\text{-Score} = 96.5\%$ |
+| **K-Means Clustering** | Unsupervised Partitioning | 3 Demographic Clusters | Lloyd's Algorithm: $\min \sum \|\mathbf{x} - \boldsymbol{\mu}_i\|^2$<br>Silhouette Cohesion Metric | $\text{Accuracy} = 85.0\%$<br>$\text{Silhouette} = 0.60\text{--}0.82$ |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-Make sure Node.js (v18+) is installed.
+- **Node.js** (v18.0.0 or higher)
+- **Python 3** (Standard library with `sqlite3`, `math`, `random`, `json`, `datetime`)
+- **Google Gemini API Key** (for AI suitability analysis)
 
-### Installation
-1. Install dependencies:
+### Installation & Setup
+
+1. **Clone the repository and install dependencies**:
    ```bash
+   git clone <repository-url>
+   cd civicai
    npm install
    ```
-2. Configure environmental credentials:
-   Create a `.env` file at root containing:
+
+2. **Set up Environment Variables**:
+   Create a `.env` file in the project root:
    ```env
-   GEMINI_API_KEY="YOUR_ACTUAL_GEMINI_API_KEY"
+   GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
-### Execution
-Run the full-stack development environment:
-```bash
-npm run dev
+3. **Start the Development Server**:
+   ```bash
+   npm run dev
+   ```
+   The application will be accessible at:
+   ```
+   http://localhost:3000
+   ```
+
+4. **Production Build & Execution**:
+   ```bash
+   npm run build
+   node server.ts
+   ```
+
+---
+
+## 📁 Project Directory Structure
+
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
->>>>>>> 75923f8 (Uploaded Project Files)
+civicai/
+├── data/
+│   ├── trained_models.json       # Cached ML model weights & benchmark metrics
+│   └── workforce_dataset.json    # 850-record training dataset
+├── src/
+│   ├── components/
+│   │   ├── AuthView.ts           # Login / Register modals & auth flows
+│   │   └── CandidateDashboard.ts # Candidate profile, resume & readiness view
+│   ├── data/
+│   │   ├── avatars.ts            # Dynamic avatar generation
+│   │   ├── mlAlgorithms.ts       # Client-side ML evaluation & NLP tokenization
+│   │   └── mlTrainingEngine.ts   # Bridge for live ML metrics & model benchmarks
+│   ├── index.css                 # Tailwind CSS styles & custom animations
+│   ├── main.ts                   # Main SPA controller (Census, Recruiter Hub, Analytics)
+│   └── types.ts                  # Full TypeScript interface definitions
+├── candidates.db                 # SQLite database for users, candidates, notifications
+├── ml_db.py                      # Unified Python ML training, inference, and DB engine
+├── server.ts                     # Express.js REST server & Gemini API integration
+├── package.json                  # Dependencies and build scripts
+└── README.md                     # Project documentation
+```
+
+---
+
+## 🔐 Default Credentials for Testing
+
+| Role | Email | Password | Features Accessible |
+| :--- | :--- | :--- | :--- |
+| **Recruiter** | `recruiter@civicai.com` | `recruiter123` | Recruiter Hub, Candidate Search/Filter, AI Suitability Scoring, Candidate Management |
+| **Candidate** | `hr@gmail.com` | `hr123` | Candidate Profile Dashboard, Resume Upload, Skills Radar, Notifications |
