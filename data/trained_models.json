@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-08-17T05:40:00Z",
+  "datasetSize": 850,
+  "trainSize": 680,
+  "testSize": 170,
+  "trainTestSplitRatio": 0.8,
+  "overallMetrics": {
+    "accuracy": 0.9375,
+    "f1Score": 0.9342,
+    "precision": 0.9287,
+    "recall": 0.9376
+  },
+  "models": {
+    "linearRegression": {
+      "modelName": "Multiple Linear Regression (Expected Salary)",
+      "category": "Classical ML",
+      "accuracy": 0.9706,
+      "precision": 0.9512,
+      "recall": 0.9609,
+      "f1Score": 0.956,
+      "r2Score": 0.9883,
+      "mae": 35997.13,
+      "rmse": 45745.54,
+      "weights": {
+        "intercept": 174606.88,
+        "experience": 75560.45,
+        "education": 319668.72,
+        "python": 6966.26,
+        "java": 9772.4,
+        "sql": 10829.44,
+        "webDev": 7719.89,
+        "machineLearning": 32990.69,
+        "problemSolving": 1238.92,
+        "communication": -71.38
+      },
+      "description": "Trained on 850+ candidate demographic samples to estimate market compensation (INR) via Ordinary Least Squares."
+    },
+    "logisticRegression": {
+      "modelName": "Logistic Regression (Employability Status)",
+      "category": "Classical ML",
+      "accuracy": 0.9588,
+      "precision": 0.9708,
+      "recall": 0.9779,
+      "specificity": 0.8824,
+      "f1Score": 0.9743,
+      "confusionMatrix": {
+        "tp": 133,
+        "fp": 4,
+        "tn": 30,
+        "fn": 3
+      },
+      "weights": [
+        1.9766,
+        0.469,
+        0.3235,
+        0.7938,
+        1.0385,
+        0.4568,
+        0.4139
+      ],
+      "description": "Binary Sigmoid classifier trained to predict general employability relative to current Indian industry norms."
+    },
+    "randomForest": {
+      "modelName": "Random Forest (Career Score Predictor)",
+      "category": "Classical ML",
+      "accuracy": 0.9706,
+      "precision": 0.96,
+      "recall": 0.97,
+      "f1Score": 0.965,
+      "numTrees": 12,
+      "featureImportances": [
+        {
+          "feature": "Experience",
+          "importance": 0.3,
+          "weight": 30.0
+        },
+        {
+          "feature": "TechSkillsAvg",
+          "importance": 0.288,
+          "weight": 28.8
+        },
+        {
+          "feature": "SoftSkillsAvg",
+          "importance": 0.135,
+          "weight": 13.5
+        },
+        {
+          "feature": "ProblemSolving",
+          "importance": 0.059,
+          "weight": 5.9
+        },
+        {
+          "feature": "WebDev",
+          "importance": 0.053,
+          "weight": 5.3
+        },
+        {
+          "feature": "Leadership",
+          "importance": 0.041,
+          "weight": 4.1
+        },
+        {
+          "feature": "SQL",
+          "importance": 0.035,
+          "weight": 3.5
+        },
+        {
+          "feature": "MachineLearning",
+          "importance": 0.035,
+          "weight": 3.5
+        },
+        {
+          "feature": "Python",
+          "importance": 0.029,
+          "weight": 2.9
+        },
+        {
+          "feature": "EducationLevel",
+          "importance": 0.024,
+          "weight": 2.4
+        }
+      ],
+      "description": "Ensemble of decision trees trained via bootstrap aggregating and random feature sub-sampling."
+    },
+    "kmeans": {
+      "modelName": "K-Means Clustering (Workforce Demographics)",
+      "category": "Classical ML",
+      "accuracy": 0.85,
+      "precision": 0.833,
+      "recall": 0.8415,
+      "f1Score": 0.8415,
+      "silhouetteScore": 0.5985,
+      "wcss": 533.57,
+      "clusterCounts": {
+        "Fresher": 101,
+        "Skilled Professional": 22,
+        "Career Changer": 47
+      },
+      "centroids": {
+        "Fresher": {
+          "experience": 1.85,
+          "techAvg": 2.37,
+          "softAvg": 2.61,
+          "salaryMillion": 0.81
+        },
+        "Skilled Professional": {
+          "experience": 13.93,
+          "techAvg": 4.53,
+          "softAvg": 4.45,
+          "salaryMillion": 1.94
+        },
+        "Career Changer": {
+          "experience": 6.48,
+          "techAvg": 3.77,
+          "softAvg": 3.9,
+          "salaryMillion": 1.29
+        }
+      },
+      "description": "Unsupervised spatial partitioning clustering candidates into 3 natural talent demographic segments."
+    }
+  },
+  "benchmarks": [
+    {
+      "modelName": "Multiple Linear Regression (Salary)",
+      "category": "Classical ML",
+      "accuracy": 0.9706,
+      "precision": 0.9512,
+      "recall": 0.9609,
+      "f1Score": 0.956,
+      "description": "Ordinary Least Squares regression (R\u00b2: 0.9883, RMSE: \u20b945,745 LPA).",
+      "pros": "Deterministic Normal Equation, instant closed-form evaluation, directly explainable feature coefficients.",
+      "cons": "Assumes linear relationships; does not capture exponential salary bumps for niche skillsets."
+    },
+    {
+      "modelName": "Logistic Regression (Employability)",
+      "category": "Classical ML",
+      "accuracy": 0.9588,
+      "precision": 0.9708,
+      "recall": 0.9779,
+      "f1Score": 0.9743,
+      "description": "Binary Cross-Entropy Sigmoid classifier (TP: 133, FP: 4, TN: 30, FN: 3).",
+      "pros": "Outputs clean continuous probabilities [0, 1], highly effective for linear decision boundaries.",
+      "cons": "Can suffer when strong non-linear interactions occur between soft skills and tech skills."
+    },
+    {
+      "modelName": "Random Forest (Career Score)",
+      "category": "Classical ML",
+      "accuracy": 0.9706,
+      "precision": 0.96,
+      "recall": 0.97,
+      "f1Score": 0.965,
+      "description": "12-tree Decision Ensemble with randomized feature subsets and bootstrap aggregating.",
+      "pros": "Resistant to overfitting, handles complex feature interactions and non-linear splits robustly.",
+      "cons": "Higher memory overhead than single linear models, ensemble traversal required for predictions."
+    },
+    {
+      "modelName": "K-Means Clustering (Talent Segments)",
+      "category": "Classical ML",
+      "accuracy": 0.85,
+      "precision": 0.833,
+      "recall": 0.8415,
+      "f1Score": 0.8415,
+      "description": "Lloyd's Iterative Clustering (Silhouette Score: 0.5985, k=3 segments).",
+      "pros": "Discovers natural demographic talent clusters without requiring pre-labeled manual training tags.",
+      "cons": "Sensitive to feature scale variations, assumes spherical spatial cluster geometry."
+    }
+  ]
+}

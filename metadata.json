@@ -1,0 +1,6 @@
+{
+  "name": "CivicAI",
+  "description": "AI-Powered Career Intelligence & Recruiter Hub with advanced machine learning modeling, NLP goal analysis, and an interactive recruiter workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

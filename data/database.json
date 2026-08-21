@@ -1,0 +1,1311 @@
+[
+  {
+    "id": "cand-414",
+    "name": "Harry",
+    "email": "hr@gmail.com",
+    "age": 24,
+    "gender": "Male",
+    "city": "Bengaluru",
+    "state": "KA",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 2,
+    "currentRole": "Software Trainee",
+    "preferredRole": "Full Stack Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 850000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 3,
+      "java": 3,
+      "sql": 3,
+      "webDevelopment": 3,
+      "machineLearning": 3,
+      "communication": 3,
+      "teamwork": 3,
+      "leadership": 3,
+      "problemSolving": 3,
+      "englishProficiency": 3
+    },
+    "careerGoals": "i want to get job and enhance my skills",
+    "careerScore": 67,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 806000.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Get",
+      "Job",
+      "Enhance",
+      "Skills"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 52,
+        "verdict": "Skill Gap",
+        "strengths": [
+          "Foundational knowledge in Python and SQL which are essential for building tabular data pipelines.",
+          "Prior exposure to basic machine learning concepts combined with general software engineering experience as a trainee."
+        ],
+        "gaps": [
+          "Lacks hands-on experience with specific classical algorithms like XGBoost, Random Forests, and advanced regression models.",
+          "Currently prefers Full Stack Engineering, showing a misalignment with dedicated machine learning career goals."
+        ],
+        "upskillingPlan": [
+          "Take specialized courses in classical machine learning focusing on ensemble methods, regression techniques, and statistical validation.",
+          "Develop hands-on projects involving end-to-end tabular data pipelines and model deployment using Python and SQL."
+        ],
+        "justification": "Harry possesses decent foundational skills in Python and SQL, but currently lacks the deep statistical and algorithmic expertise required for a Classical ML Engineer. Furthermore, his career focus is geared towards Full Stack development, meaning significant upskilling and a shift in interest would be necessary to bridge this gap.",
+        "evaluatedAt": "2026-07-07T08:57:21.522Z"
+      }
+    }
+  },
+  {
+    "id": "cand-001",
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@gmail.com",
+    "age": 26,
+    "gender": "Male",
+    "city": "Bengaluru",
+    "state": "KA",
+    "education": "Master's",
+    "employmentStatus": "Employed",
+    "experience": 4,
+    "currentRole": "Junior Data Analyst",
+    "preferredRole": "Senior Machine Learning Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1450000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 2,
+      "sql": 4,
+      "webDevelopment": 3,
+      "machineLearning": 5,
+      "communication": 4,
+      "teamwork": 5,
+      "leadership": 3,
+      "problemSolving": 5,
+      "englishProficiency": 4
+    },
+    "careerGoals": "My ultimate career goal is to research and deploy scalable, state-of-the-art machine learning models that make real-world impacts. I want to lead AI infrastructure initiatives and ensure ethical AI deployment.",
+    "careerScore": 82,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1117200.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Ultimate",
+      "Career",
+      "Goal",
+      "Research",
+      "Deploy"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 98,
+        "verdict": "Strong Match",
+        "strengths": [
+          "Excellent Machine Learning proficiency (level 5/5)",
+          "Strong Python coding foundation for algorithm deployment."
+        ],
+        "gaps": [
+          "Could acquire more production experience in specialized frameworks."
+        ],
+        "upskillingPlan": [
+          "Follow curated engineering tracks to align with trending industry stacks."
+        ],
+        "justification": "Deterministic analysis suggests candidate Arjun Mehta is a Strong Match for the Classical Machine Learning Engineer role, displaying a technical evaluation score of 98%.",
+        "evaluatedAt": "2026-07-13T18:18:25.608Z"
+      }
+    }
+  },
+  {
+    "id": "cand-002",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@yahoo.com",
+    "age": 22,
+    "gender": "Female",
+    "city": "Mumbai",
+    "state": "MH",
+    "education": "Bachelor's",
+    "employmentStatus": "Student",
+    "experience": 0,
+    "currentRole": "Student",
+    "preferredRole": "Frontend Developer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 850000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": false,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 2,
+      "java": 1,
+      "sql": 3,
+      "webDevelopment": 5,
+      "machineLearning": 1,
+      "communication": 5,
+      "teamwork": 4,
+      "leadership": 2,
+      "problemSolving": 4,
+      "englishProficiency": 5
+    },
+    "careerGoals": "I am a passionate frontend enthusiast looking to build modern, highly accessible web user interfaces using HTML, CSS, and Javascript. I strive to improve my UI/UX design skills and make interactive applications.",
+    "careerScore": 64,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 621600.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Passionate",
+      "Frontend",
+      "Enthusiast",
+      "Looking",
+      "Build"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 15,
+        "verdict": "Not Suited",
+        "strengths": [
+          "Strong problem-solving abilities and communication skills",
+          "A solid starting foundation in SQL for basic data querying"
+        ],
+        "gaps": [
+          "Critical gap in foundational machine learning algorithms and statistical concepts",
+          "Insufficient Python programming skills for deploying production models",
+          "Career goals are entirely focused on Frontend development and UI/UX"
+        ],
+        "upskillingPlan": [
+          "Complete a comprehensive curriculum on classical machine learning algorithms, including Random Forests and XGBoost",
+          "Deepen Python development skills, focusing specifically on libraries like Pandas, NumPy, and Scikit-Learn",
+          "Develop and deploy basic regression and classification pipelines using tabular data"
+        ],
+        "justification": "While Priya is a strong candidate with excellent front-end development and communication skills, her current technical capabilities and career ambitions do not align with the requirements of a Classical Machine Learning Engineer. Transitioning into this position would require a complete shift in her career path and extensive training in data science and Python engineering.",
+        "evaluatedAt": "2026-07-07T09:18:59.579Z"
+      }
+    }
+  },
+  {
+    "id": "cand-003",
+    "name": "Rajesh Iyer",
+    "email": "rajesh.iyer@outlook.com",
+    "age": 34,
+    "gender": "Male",
+    "city": "New Delhi",
+    "state": "DL",
+    "education": "PhD",
+    "employmentStatus": "Employed",
+    "experience": 8,
+    "currentRole": "Lead Researcher",
+    "preferredRole": "Principal Data Scientist",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1950000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": true,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 4,
+      "webDevelopment": 1,
+      "machineLearning": 5,
+      "communication": 3,
+      "teamwork": 4,
+      "leadership": 4,
+      "problemSolving": 5,
+      "englishProficiency": 5
+    },
+    "careerGoals": "I aim to bridge the gap between academic theory and industry engineering. I enjoy designing novel algorithmic models and optimizing high-dimensional feature systems for industrial operations.",
+    "careerScore": 90,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1498400.0,
+    "cluster": "Skilled Professional",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Bridge",
+      "Gap",
+      "Academic",
+      "Theory",
+      "Industry"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 92,
+        "verdict": "Strong Match",
+        "strengths": [
+          "Expert-level Python and robust SQL capabilities perfectly suited for tabular data pipeline optimization.",
+          "Strong theoretical foundation from a PhD coupled with advanced machine learning mastery for statistical validation.",
+          "8 years of experience optimizing high-dimensional feature systems and designing algorithmic models."
+        ],
+        "gaps": [
+          "Limited direct experience in deploying high-efficiency, low-latency backend server features.",
+          "An academic-heavy background that may require adaptation to production-level software engineering cycles."
+        ],
+        "upskillingPlan": [
+          "Complete advanced training in ML system design and low-latency model deployment using Python frameworks like FastAPI.",
+          "Study high-performance computing principles and database indexing techniques for SQL optimization in production."
+        ],
+        "justification": "Rajesh is an exceptionally strong candidate whose PhD background and deep classical ML expertise align perfectly with the technical requirements of this role. While his experience leans academic, his strong Python and SQL foundations will allow him to quickly master production-level server deployments. He represents an ideal blend of theoretical rigor and practical problem-solving capability.",
+        "evaluatedAt": "2026-08-16T08:01:55.434Z"
+      },
+      "Frontend Web Developer": {
+        "roleName": "Frontend Web Developer",
+        "score": 80,
+        "verdict": "Potential Match",
+        "strengths": [
+          "Displays good general problem solving capabilities."
+        ],
+        "gaps": [
+          "Requires wider familiarity with component-driven state architecture (Redux/Zustand)."
+        ],
+        "upskillingPlan": [
+          "Build 3 end-to-end projects implementing custom React state hooks."
+        ],
+        "justification": "Deterministic analysis suggests candidate Rajesh Iyer is a Potential Match for the Frontend Web Developer role, displaying a technical evaluation score of 80%.",
+        "evaluatedAt": "2026-08-17T15:37:30.938Z"
+      }
+    }
+  },
+  {
+    "id": "cand-004",
+    "name": "Ananya Deshmukh",
+    "email": "ananya.d@gmail.com",
+    "age": 29,
+    "gender": "Female",
+    "city": "Hyderabad",
+    "state": "TS",
+    "education": "Bachelor's",
+    "employmentStatus": "Freelancer",
+    "experience": 5,
+    "currentRole": "Full Stack Developer",
+    "preferredRole": "Full Stack Engineer",
+    "preferredIndustry": "FinTech",
+    "expectedSalary": 1300000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": false,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 3,
+      "java": 4,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 2,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 3,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "My objective is to construct fast, robust, and safe transactional financial applications. I excel in database query optimizations and creating seamless backend integrations with Node.js and SQL.",
+    "careerScore": 75,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 999200.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Objective",
+      "Construct",
+      "Fast",
+      "Robust",
+      "Safe"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 52,
+        "verdict": "Skill Gap",
+        "strengths": [
+          "Expert-level SQL skills (5/5) which are crucial for optimizing tabular data pipelines and querying large datasets.",
+          "Strong software engineering foundation with 5 years of professional backend experience.",
+          "Solid intermediate Python skills (3/5) providing a workable base for ML script development."
+        ],
+        "gaps": [
+          "Significant skill gap in Machine Learning (rated 2/5) with no demonstrated experience in classical algorithms like Random Forests or XGBoost.",
+          "Lack of experience in statistical validation and advanced data analysis.",
+          "Career goals are currently misaligned, focusing on transactional financial applications and Node.js instead of ML pipelines."
+        ],
+        "upskillingPlan": [
+          "Complete a comprehensive specialization in classical machine learning algorithms, focusing on regression, Random Forests, and gradient boosting using Scikit-Learn.",
+          "Develop practical projects implementing data validation, feature engineering, and statistical evaluations on tabular datasets.",
+          "Transition Python skills from general backend development to data manipulation libraries like Pandas, NumPy, and Scipy."
+        ],
+        "justification": "Ananya is a highly capable software developer with outstanding SQL expertise, but she currently lacks the core classical machine learning knowledge required for this engineering role. Additionally, her stated career goals are focused on transactional web backend systems rather than data science. To successfully transition, she would need to shift her focus toward data engineering and statistical modeling.",
+        "evaluatedAt": "2026-07-07T08:56:08.108Z"
+      }
+    }
+  },
+  {
+    "id": "cand-005",
+    "name": "Rohan Das",
+    "email": "rohan.das@hotmail.com",
+    "age": 31,
+    "gender": "Male",
+    "city": "Pune",
+    "state": "MH",
+    "education": "Bachelor's",
+    "employmentStatus": "Unemployed",
+    "experience": 6,
+    "currentRole": "Mechanical Engineer",
+    "preferredRole": "Data Analyst",
+    "preferredIndustry": "Healthcare",
+    "expectedSalary": 950000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": true,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 4,
+      "java": 1,
+      "sql": 4,
+      "webDevelopment": 2,
+      "machineLearning": 3,
+      "communication": 4,
+      "teamwork": 5,
+      "leadership": 2,
+      "problemSolving": 5,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am transitioning my career from mechanical engineering to data analysis. I have completed several rigorous bootcamps on SQL and Python, and I want to apply my problem-solving skills in analyzing clinical trials.",
+    "careerScore": 77,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1047200.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Transitioning",
+      "Career",
+      "Mechanical",
+      "Engineering",
+      "Data"
+    ],
+    "suitabilityHistory": {
+      "Backend Systems Engineer": {
+        "roleName": "Backend Systems Engineer",
+        "score": 92,
+        "verdict": "Strong Match",
+        "strengths": [
+          "Displays good general problem solving capabilities."
+        ],
+        "gaps": [
+          "Could acquire more production experience in specialized frameworks."
+        ],
+        "upskillingPlan": [
+          "Follow curated engineering tracks to align with trending industry stacks."
+        ],
+        "justification": "Deterministic analysis suggests candidate Rohan Das is a Strong Match for the Backend Systems Engineer role, displaying a technical evaluation score of 92%.",
+        "evaluatedAt": "2026-08-17T13:26:50.846Z"
+      }
+    }
+  },
+  {
+    "id": "cand-006",
+    "name": "Emily Sen",
+    "email": "emily.sen@gmail.com",
+    "age": 24,
+    "gender": "Female",
+    "city": "Kolkata",
+    "state": "WB",
+    "education": "Bootcamp",
+    "employmentStatus": "Unemployed",
+    "experience": 1,
+    "currentRole": "Junior Web Developer",
+    "preferredRole": "Web Developer",
+    "preferredIndustry": "E-Commerce",
+    "expectedSalary": 720000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": false,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 1,
+      "java": 1,
+      "sql": 2,
+      "webDevelopment": 4,
+      "machineLearning": 1,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 2,
+      "problemSolving": 3,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am a bootcamp graduate passionate about writing clean, testable JavaScript. I hope to join a fast-growing retail team where I can work closely with designers and product owners on responsive web design.",
+    "careerScore": 62,
+    "employabilityStatus": "Needs Upskilling",
+    "predictedSalary": 623200.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Bootcamp",
+      "Graduate",
+      "Passionate",
+      "Writing",
+      "Clean"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-007",
+    "name": "Kabir Malhotra",
+    "email": "kabir.malhotra@gmail.com",
+    "age": 28,
+    "gender": "Male",
+    "city": "Chennai",
+    "state": "TN",
+    "education": "Master's",
+    "employmentStatus": "Employed",
+    "experience": 3,
+    "currentRole": "Software Engineer I",
+    "preferredRole": "Backend Developer",
+    "preferredIndustry": "Enterprise Software",
+    "expectedSalary": 1100000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 3,
+      "java": 5,
+      "sql": 4,
+      "webDevelopment": 3,
+      "machineLearning": 2,
+      "communication": 3,
+      "teamwork": 4,
+      "leadership": 3,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I want to specialize in writing high-concurrency microservices in Java. I am eager to learn system architecture and container orchestration to deploy robust APIs.",
+    "careerScore": 77,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 981600.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Specialize",
+      "Writing",
+      "Highconcurrency",
+      "Microservices",
+      "Java"
+    ],
+    "suitabilityHistory": {
+      "Backend Systems Engineer": {
+        "roleName": "Backend Systems Engineer",
+        "score": 81,
+        "verdict": "Potential Match",
+        "strengths": [
+          "Displays good general problem solving capabilities."
+        ],
+        "gaps": [
+          "Could acquire more production experience in specialized frameworks."
+        ],
+        "upskillingPlan": [
+          "Follow curated engineering tracks to align with trending industry stacks."
+        ],
+        "justification": "Deterministic analysis suggests candidate Kabir Malhotra is a Potential Match for the Backend Systems Engineer role, displaying a technical evaluation score of 81%.",
+        "evaluatedAt": "2026-07-15T17:37:03.560Z"
+      }
+    }
+  },
+  {
+    "id": "cand-008",
+    "name": "Aanya Verma",
+    "email": "aanya.v@gmail.com",
+    "age": 23,
+    "gender": "Female",
+    "city": "Pune",
+    "state": "MH",
+    "education": "Bachelor's",
+    "employmentStatus": "Student",
+    "experience": 0,
+    "currentRole": "Student",
+    "preferredRole": "Junior Machine Learning Engineer",
+    "preferredIndustry": "Biotech",
+    "expectedSalary": 900000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 4,
+      "java": 2,
+      "sql": 3,
+      "webDevelopment": 2,
+      "machineLearning": 4,
+      "communication": 4,
+      "teamwork": 3,
+      "leadership": 2,
+      "problemSolving": 4,
+      "englishProficiency": 5
+    },
+    "careerGoals": "My dream is to apply machine learning classification and clustering algorithms to medical and cancer screening datasets. I want to build a career at the intersection of statistics and bioinformatics.",
+    "careerScore": 70,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 702000.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Dream",
+      "Apply",
+      "Machine",
+      "Learning",
+      "Classification"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 72,
+        "verdict": "Potential Match",
+        "strengths": [
+          "Strong foundational knowledge in Python and core Machine Learning principles suitable for classical modeling.",
+          "Great conceptual alignment with classification, clustering, and statistical validation in biological contexts.",
+          "Solid problem-solving capabilities and excellent English communication skills."
+        ],
+        "gaps": [
+          "Lacks professional experience in building high-efficiency server features and production tabular data pipelines.",
+          "Needs deeper practical proficiency in SQL for heavy-duty database querying and pipeline optimization."
+        ],
+        "upskillingPlan": [
+          "Build and deploy an end-to-end classical ML project using Flask/FastAPI to simulate real-world server deployment.",
+          "Take an advanced SQL course to master data manipulation, optimization, and ETL pipeline design.",
+          "Study statistical validation methods and perform projects on real-world medical or biological datasets."
+        ],
+        "justification": "Aanya is a highly motivated junior candidate with strong Python and machine learning fundamentals that align well with the core mathematical needs of the role. While she lacks industry experience with production pipelines and high-efficiency server environments, her solid problem-solving skills make her a strong potential match. With some targeted upskilling in SQL and model deployment, she has the potential to excel in this engineering team.",
+        "evaluatedAt": "2026-07-27T08:21:58.605Z"
+      }
+    }
+  },
+  {
+    "id": "cand-009",
+    "name": "Manpreet Singh",
+    "email": "manpreet.s@yahoo.com",
+    "age": 38,
+    "gender": "Male",
+    "city": "Gurugram",
+    "state": "HR",
+    "education": "Master's",
+    "employmentStatus": "Employed",
+    "experience": 12,
+    "currentRole": "Engineering Manager",
+    "preferredRole": "Director of Engineering",
+    "preferredIndustry": "Enterprise Software",
+    "expectedSalary": 2100000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": false,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 3,
+      "java": 4,
+      "sql": 3,
+      "webDevelopment": 3,
+      "machineLearning": 2,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 5
+    },
+    "careerGoals": "I am a veteran engineer and leader hoping to drive technical strategy and career growth programs. I focus on coaching high-performing teams, establishing clean development protocols, and scaling secure systems.",
+    "careerScore": 89,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1526000.0,
+    "cluster": "Skilled Professional",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Veteran",
+      "Engineer",
+      "Leader",
+      "Hoping",
+      "Drive"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 35,
+        "verdict": "Not Suited",
+        "strengths": [
+          "Strong background in system scaling and clean development protocols with 12 years of experience",
+          "Proficient in Python and SQL at a baseline level for database and scripting needs",
+          "Excellent leadership, communication, and problem-solving capabilities"
+        ],
+        "gaps": [
+          "Lacks hands-on depth in Classical Machine Learning algorithms, rating only 2/5 in ML",
+          "Career alignment mismatch, as the candidate targets Director-level leadership rather than individual contributor ML roles",
+          "Requires deeper statistical validation and high-efficiency tabular data pipeline optimization experience"
+        ],
+        "upskillingPlan": [
+          "Complete advanced coursework in statistical learning and classical ML frameworks like Scikit-Learn and XGBoost",
+          "Practice hands-on feature engineering and tabular data optimization pipelines",
+          "Acquire certifications in ML Engineering if pivoting back to an individual contributor track"
+        ],
+        "justification": "While Manpreet is an exceptional engineering leader with strong managerial skills, his technical focus and career goals are misaligned with this hands-on Classical ML Engineer position. His machine learning skills are currently at a basic level, and he is actively seeking Director-level roles rather than individual contributor engineering tasks.",
+        "evaluatedAt": "2026-07-07T08:22:16.087Z"
+      }
+    }
+  },
+  {
+    "id": "cand-010",
+    "name": "Deepak Kumar",
+    "email": "deepak.kumar@gov.in",
+    "age": 41,
+    "gender": "Male",
+    "city": "Noida",
+    "state": "UP",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 15,
+    "currentRole": "IT Analyst",
+    "preferredRole": "Senior Database Administrator",
+    "preferredIndustry": "Government",
+    "expectedSalary": 1150000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": false,
+    "interestedInGovJobs": true,
+    "interestedInPrivateJobs": false,
+    "skills": {
+      "python": 2,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 1,
+      "machineLearning": 1,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 4,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I have worked in government IT services for over a decade. I hope to modernize government databases, ensuring robust backups, tight access control security rules, and writing optimized database queries.",
+    "careerScore": 83,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1551600.0,
+    "cluster": "Skilled Professional",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Government",
+      "Worked",
+      "Services",
+      "Decade",
+      "Modernize"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-011",
+    "name": "Karan Johar",
+    "email": "karan.johar@gmail.com",
+    "age": 25,
+    "gender": "Male",
+    "city": "Ahmedabad",
+    "state": "GJ",
+    "education": "Master's",
+    "employmentStatus": "Freelancer",
+    "experience": 2,
+    "currentRole": "UI Designer",
+    "preferredRole": "UX Engineer",
+    "preferredIndustry": "Creative Design",
+    "expectedSalary": 950000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 2,
+      "java": 1,
+      "sql": 2,
+      "webDevelopment": 4,
+      "machineLearning": 1,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 3,
+      "problemSolving": 3,
+      "englishProficiency": 5
+    },
+    "careerGoals": "Designing experiences that delight users is my craft. I write custom HTML and interactive CSS to prototype complex micro-interactions, bridging the gap between flat mockups and active interfaces.",
+    "careerScore": 69,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 852000.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Designing",
+      "Experiences",
+      "Delight",
+      "Users",
+      "Craft"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-012",
+    "name": "Sunita Rao",
+    "email": "sunita.rao@gmail.com",
+    "age": 27,
+    "gender": "Female",
+    "city": "Jaipur",
+    "state": "RJ",
+    "education": "Bachelor's",
+    "employmentStatus": "Unemployed",
+    "experience": 3,
+    "currentRole": "Web Content Editor",
+    "preferredRole": "Junior Full Stack Developer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 800000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 3,
+      "java": 2,
+      "sql": 3,
+      "webDevelopment": 4,
+      "machineLearning": 2,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 2,
+      "problemSolving": 3,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I have spent the last two years self-teaching Node.js and basic programming. I am looking for a full stack developer role where I can be mentored by senior engineers and work on commercial projects.",
+    "careerScore": 64,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 841200.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Spent",
+      "Last",
+      "Two",
+      "Years",
+      "Selfteaching"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-428",
+    "name": "Ashwin Ahuja",
+    "email": "ashwin@gmail.com",
+    "age": 25,
+    "gender": "Male",
+    "city": "Ahmedabad",
+    "state": "GJ",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 3,
+    "currentRole": "Data Analyst",
+    "preferredRole": "Data Scientist",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 900000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 4,
+      "machineLearning": 4,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 3,
+      "englishProficiency": 4
+    },
+    "careerGoals": "Passionate , Determined and Hardworking",
+    "careerScore": 77,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 928800.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Passionate",
+      "Determined",
+      "Hardworking"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-244",
+    "name": "Bhavya Saini",
+    "email": "bhavyasaini@gmail.com",
+    "age": 26,
+    "gender": "Female",
+    "city": "Chennai",
+    "state": "TN",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 3,
+    "currentRole": "Junior Engineer",
+    "preferredRole": "Full Stack Developer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1000000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 4,
+      "sql": 4,
+      "webDevelopment": 5,
+      "machineLearning": 5,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "Passionate",
+    "careerScore": 82,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 962400.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Passionate"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-402",
+    "name": "Sneha Sharma",
+    "email": "snehaa@gmail.com",
+    "age": 26,
+    "gender": "Female",
+    "city": "Chennai",
+    "state": "TN",
+    "education": "Bachelor's",
+    "employmentStatus": "Freelancer",
+    "experience": 3,
+    "currentRole": "AI Engineer",
+    "preferredRole": "AI/ML Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 900000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 4,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am highly motivated , passionate and determined about my career.",
+    "careerScore": 82,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 935600.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Highly",
+      "Motivated",
+      "Passionate",
+      "Determined",
+      "Career"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-993",
+    "name": "Sanchit Arora",
+    "email": "sanchit@gmail.com",
+    "age": 20,
+    "gender": "Male",
+    "city": "Noida",
+    "state": "UP",
+    "education": "Bachelor's",
+    "employmentStatus": "Student",
+    "experience": 0,
+    "currentRole": "Student",
+    "preferredRole": "AI/ML Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 500000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 4,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am an Active Student looking for oppurtunities to enhance my skills and gain practical exposure and experience in tech field.",
+    "careerScore": 80,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 749600.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Active",
+      "Student",
+      "Looking",
+      "Oppurtunities",
+      "Enhance"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 75,
+        "verdict": "Potential Match",
+        "strengths": [
+          "Expert-level proficiency in Python and SQL, which are essential for building tabular data pipelines and high-efficiency backend features.",
+          "Solid foundational knowledge in Machine Learning coupled with strong problem-solving abilities.",
+          "Excellent soft skills including communication, teamwork, and leadership, indicating strong collaborative potential."
+        ],
+        "gaps": [
+          "Lacks hands-on professional experience deploying and maintaining machine learning models in a production environment.",
+          "Needs to demonstrate familiarity with statistical validation techniques and specific classical frameworks like XGBoost or LightGBM."
+        ],
+        "upskillingPlan": [
+          "Build and deploy end-to-end machine learning pipelines using Docker and API frameworks like FastAPI to mimic production environments.",
+          "Study advanced ensemble methods and statistical validation techniques through hands-on projects or specialized online courses."
+        ],
+        "justification": "Sanchit is a highly promising entry-level candidate with exceptional foundational skills in Python and SQL, making him well-suited for tabular data work. While he currently lacks industry experience, his solid machine learning background and strong problem-solving capabilities suggest he would adapt quickly. With some structured mentorship on production deployment and statistical validation, he has the potential to excel in this role.",
+        "evaluatedAt": "2026-07-07T09:27:36.803Z"
+      }
+    }
+  },
+  {
+    "id": "cand-149",
+    "name": "Harjot Kaur",
+    "email": "harjot01@gmail.com",
+    "age": 26,
+    "gender": "Female",
+    "city": "Indore",
+    "state": "MP",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 3,
+    "currentRole": "Backend Engineer",
+    "preferredRole": "Senior Backend Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 700000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 4,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 5,
+      "englishProficiency": 4
+    },
+    "careerGoals": "Motivated and Eager to Learn and grow",
+    "careerScore": 82,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 935600.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Motivated",
+      "Eager",
+      "Learn",
+      "Grow"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-424",
+    "name": "Harvir Singh",
+    "email": "harvir08@gmail.com",
+    "age": 25,
+    "gender": "Male",
+    "city": "New Delhi",
+    "state": "DL",
+    "education": "Bachelor's",
+    "employmentStatus": "Unemployed",
+    "experience": 2,
+    "currentRole": "Junior Developer",
+    "preferredRole": "Web Developer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 850000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 4,
+      "java": 4,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 3,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am highly passionate and motivated about my career in the field of web development. I want to grow more and more and gain practical and professional experience in my chosen field.",
+    "careerScore": 81,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 846800.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Positive",
+    "nlpKeywords": [
+      "Field",
+      "Highly",
+      "Passionate",
+      "Motivated",
+      "Career"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-996",
+    "name": "Gungun Kaur",
+    "email": "gungun02@gmail.com",
+    "age": 25,
+    "gender": "Female",
+    "city": "Noida",
+    "state": "UP",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 3,
+    "currentRole": "Data Analyst",
+    "preferredRole": "Data Scientist",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1000000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 5,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 3,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am data-driven and finds interesting to generate meaningful insights from the data as a data analyst. I want to dive deep into the world of data by preferring the job as a Data Scientist by training models on the data , deploy and predict.",
+    "careerScore": 77,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 962400.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Data",
+      "Datadriven",
+      "Finds",
+      "Interesting",
+      "Generate"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-376",
+    "name": "Shoubit Ahuja",
+    "email": "shoubit@gmail.com",
+    "age": 30,
+    "gender": "Male",
+    "city": "Gurugram",
+    "state": "HR",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 5,
+    "currentRole": "Backend Engineer",
+    "preferredRole": "Senior Backend Engineer",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1000000.0,
+    "preferredWorkMode": "Remote",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 4,
+      "sql": 5,
+      "webDevelopment": 5,
+      "machineLearning": 4,
+      "communication": 5,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "Highly Motivated and Experienced in backend development..Have decent experience of 5 years...Working as a Backend Engineer. Want to upgrade myself as a Senior Backend Engineer.",
+    "careerScore": 88,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1066400.0,
+    "cluster": "Skilled Professional",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Backend",
+      "Engineer",
+      "Highly",
+      "Motivated",
+      "Experienced"
+    ],
+    "suitabilityHistory": {
+      "Backend Systems Engineer": {
+        "roleName": "Backend Systems Engineer",
+        "score": 88,
+        "verdict": "Strong Match",
+        "strengths": [
+          "5 years of robust backend engineering experience with master-level proficiency in Python and SQL.",
+          "Proven strength in Java and Web Development, crucial for building and optimizing RESTful APIs.",
+          "Excellent leadership and communication skills, preparing him well for senior-level responsibilities and architectural decisions."
+        ],
+        "gaps": [
+          "Lacks explicit experience in high-concurrency microservices architecture and distributed system design patterns.",
+          "Needs hands-on exposure to transactional PL/SQL integrations and database procedural optimization.",
+          "No direct evidence of server security monitoring or cloud infrastructure orchestration experience."
+        ],
+        "upskillingPlan": [
+          "Complete advanced training in System Design focusing on high-concurrency, microservices, and distributed systems.",
+          "Earn a certification or complete a deep-dive course in PL/SQL and transactional database management systems.",
+          "Gain hands-on experience with server monitoring and security tools such as Prometheus, Grafana, or AWS CloudWatch."
+        ],
+        "justification": "Shoubit is an exceptionally strong backend engineer with 5 years of solid experience and top-tier skills in Python, SQL, and Java. While he has minor gaps in direct microservices architecture and PL/SQL integrations, his strong foundational problem-solving and leadership skills make him an excellent candidate for this transition. With targeted upskilling in high-concurrency system design, he will quickly excel as a Backend Systems Engineer.",
+        "evaluatedAt": "2026-07-26T12:50:08.568Z"
+      }
+    }
+  },
+  {
+    "id": "cand-940",
+    "name": "Johny",
+    "email": "johny02@gmail.com",
+    "age": 30,
+    "gender": "Male",
+    "city": "Ahmedabad",
+    "state": "GJ",
+    "education": "Master's",
+    "employmentStatus": "Employed",
+    "experience": 4,
+    "currentRole": "Senior Engineer",
+    "preferredRole": "Senior Data Scientist",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 1000000.0,
+    "preferredWorkMode": "On-Site",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 5,
+      "java": 3,
+      "sql": 5,
+      "webDevelopment": 4,
+      "machineLearning": 5,
+      "communication": 4,
+      "teamwork": 4,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "Passionate, Determined, Hardworking",
+    "careerScore": 85,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 1137600.0,
+    "cluster": "Career Changer",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Passionate",
+      "Determined",
+      "Hardworking"
+    ],
+    "suitabilityHistory": {}
+  },
+  {
+    "id": "cand-679",
+    "name": "Mankirat Kaur",
+    "email": "mankirat12@gmail.com",
+    "age": 20,
+    "gender": "Female",
+    "city": "New Delhi",
+    "state": "DL",
+    "education": "Bachelor's",
+    "employmentStatus": "Employed",
+    "experience": 1,
+    "currentRole": "Junior Engineer",
+    "preferredRole": "Data Scientist",
+    "preferredIndustry": "Technology",
+    "expectedSalary": 900000.0,
+    "preferredWorkMode": "Hybrid",
+    "willingToRelocate": true,
+    "interestedInGovJobs": false,
+    "interestedInPrivateJobs": true,
+    "skills": {
+      "python": 4,
+      "java": 3,
+      "sql": 4,
+      "webDevelopment": 5,
+      "machineLearning": 4,
+      "communication": 4,
+      "teamwork": 5,
+      "leadership": 5,
+      "problemSolving": 4,
+      "englishProficiency": 4
+    },
+    "careerGoals": "I am highly motivated and passionate ,hard working",
+    "careerScore": 80,
+    "employabilityStatus": "Employable",
+    "predictedSalary": 798000.0,
+    "cluster": "Fresher",
+    "nlpSentiment": "Neutral",
+    "nlpKeywords": [
+      "Highly",
+      "Motivated",
+      "Passionate",
+      "Hard",
+      "Working"
+    ],
+    "suitabilityHistory": {
+      "Classical Machine Learning Engineer": {
+        "roleName": "Classical Machine Learning Engineer",
+        "score": 97,
+        "verdict": "Strong Match",
+        "strengths": [
+          "Excellent Machine Learning proficiency (level 4/5)",
+          "Strong Python coding foundation for algorithm deployment."
+        ],
+        "gaps": [
+          "Could acquire more production experience in specialized frameworks."
+        ],
+        "upskillingPlan": [
+          "Follow curated engineering tracks to align with trending industry stacks."
+        ],
+        "justification": "Deterministic analysis suggests candidate Mankirat Kaur is a Strong Match for the Classical Machine Learning Engineer role, displaying a technical evaluation score of 97%.",
+        "evaluatedAt": "2026-08-18T05:51:48.218Z"
+      }
+    }
+  }
+]
